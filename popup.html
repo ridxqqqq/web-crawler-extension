@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>XPath 解析器</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="brand">网络爬虫 <span class="sub">XPath · lxml / BS4 / parsel</span></div>
+  </header>
+
+  <section id="pageinfo">
+    <div id="p-title">读取页面中…</div>
+    <div id="p-url"></div>
+  </section>
+
+  <button id="open-panel" class="primary">打开浮动面板（页面内）· Ctrl+Shift+X</button>
+  <div id="status" class="status"></div>
+
+  <div class="sec-title">快捷提取（lxml 风格预览，完整结果见浮动面板）</div>
+  <div id="chips"></div>
+
+  <div id="out" class="out hidden"></div>
+  <div id="err" class="err hidden"></div>
+
+  <footer>
+    <button id="copy-res">复制结果</button>
+    <button id="copy-py">复制 Python 代码</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

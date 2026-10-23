@@ -1,0 +1,57 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  width: 410px;
+  background: #0e1117;
+  color: #dbe4f3;
+  font: 13px/1.6 "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+header { padding: 12px 14px 8px; }
+.brand { font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.sub { color: #7d889e; font-size: 11px; font-weight: 400; border: 1px solid #2b344a; border-radius: 6px; padding: 1px 6px; }
+
+#pageinfo { padding: 0 14px 10px; border-bottom: 1px solid #1b2130; }
+#p-title {
+  font-weight: 600; font-size: 12.5px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+#p-url {
+  margin-top: 2px; color: #67758f; font-size: 11px; font-family: Consolas, monospace;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+button {
+  all: unset; cursor: pointer; font-size: 12px; text-align: center;
+  color: #c7d3ea; background: #1b2233; border: 1px solid #2b3550;
+  border-radius: 8px; padding: 6px 10px;
+}
+button:hover { border-color: #8cf24a; color: #8cf24a; }
+button:disabled { opacity: .45; cursor: default; }
+button.primary {
+  display: block; margin: 12px 14px 4px; width: calc(100% - 28px);
+  background: #182a17; border-color: #2f5a2b; color: #a5e87f;
+}
+.status { padding: 2px 14px 6px; color: #7d889e; font-size: 11px; min-height: 18px; }
+
+.sec-title { padding: 4px 14px 4px; color: #7d889e; font-size: 11px; }
+#chips { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 4px 14px; }
+
+.out {
+  margin: 10px 14px; padding: 10px; max-height: 250px; overflow: auto;
+  background: #0a0d13; border: 1px solid #1e2637; border-radius: 10px;
+  font: 11.5px/1.7 Consolas, monospace; color: #b9c6dd;
+  white-space: pre-wrap; word-break: break-all;
+}
+.out .h { color: #7fb069; }
+.out .d { color: #67758f; }
+
+.err {
+  margin: 10px 14px; padding: 10px;
+  background: #1a0e12; border: 1px solid #4a2430; border-radius: 10px;
+  color: #ff9c9c; font-size: 12px; white-space: pre-wrap;
+}
+.hidden { display: none; }
+
+footer { display: flex; gap: 8px; padding: 4px 14px 14px; }
+footer button { flex: 1; }

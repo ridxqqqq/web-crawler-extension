@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "网络爬虫",
+  "version": "1.3.0",
+  "description": "网页 XPath 提取工具：标题/链接/图片/文本/属性，lxml 与 BeautifulSoup 双风格展示，元素选取、批量文本提取，生成可在 Python 中复现的代码。",
+  "minimum_chrome_version": "102",
+  "permissions": ["activeTab", "scripting", "storage", "clipboardWrite"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "网络爬虫"
+  },
+  "commands": {
+    "toggle-panel": {
+      "suggested_key": { "default": "Ctrl+Shift+X", "mac": "Command+Shift+X" },
+      "description": "打开/关闭页面内 XPath 浮动面板"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
